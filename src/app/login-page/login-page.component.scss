@@ -1,0 +1,41 @@
+.logo-help-notes {
+  margin-top: 55px;
+  margin-bottom: 25px;
+  font-size: 125px;
+  width: 100%;
+}
+
+.btn-logar-help-notes {
+  border-radius: 10px;
+}
+
+.card-help-notes {
+  border-radius: 10px;
+}
+
+.input-help-notes {
+  .label {
+    color: black;
+  }
+
+  .label {
+    .input-has-focus {
+      color: orange;
+    }
+  }
+
+  &.item-md,
+  &.item-ios {
+
+    &.item-block {
+      .item-inner {
+        border-bottom: 1px solid color(black);
+        .input {
+          color: black;
+        }
+      }
+    }
+
+  }
+
+}
