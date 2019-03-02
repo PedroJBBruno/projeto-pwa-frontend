@@ -1,11 +1,9 @@
 {
   "APP_NAME": "Help Notes",
-  "About": "About",
-  "Hello world !": "Hello world !",
-  "Home": "Home",
-  "Cancel": "Cancel",
-  "Change language": "Change language",
-  "Language": "Language",
-  "Ok": "Ok",
-  "Version": "Version"
+  "Login": "Login",
+  "Email": "E-mail",
+  "Password": "Senha",
+  "Enter": "ENTRAR",
+  "SignUp": "CADASTRAR",
+  "ForgotPassword": "RECUPERAR SENHA"
 }

@@ -16,6 +16,14 @@
 }
 
 .password-eye-help-notes {
+  font-size: 2em;
   margin-top: 30px !important;
   margin-bottom: 0px !important;
+}
+
+.invisible-button-help-notes {
+  position: absolute;
+  top: 375px;
+  right: 25px;
+  background-color: transparent;
 }

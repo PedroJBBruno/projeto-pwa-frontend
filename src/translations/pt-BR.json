@@ -3,5 +3,7 @@
   "Login": "Login",
   "Email": "E-mail",
   "Password": "Senha",
-  "Enter": "ENTRAR"
+  "Enter": "ENTRAR",
+  "SignUp": "CADASTRAR",
+  "ForgotPassword": "RECUPERAR SENHA"
 }

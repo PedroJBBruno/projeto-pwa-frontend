@@ -10,22 +10,26 @@
         </ion-item>
         <ion-item no-padding>
           <ion-label floating translate>Password</ion-label>
-          <ion-input type="password" formControlName="password"></ion-input>
-          <ion-icon
-            item-end
-            class="password-eye-help-notes"
-            name="eye-off"
-            *ngIf="!isShowingPassword"
-            (click)="setShowingPassword()"
-          ></ion-icon>
-          <ion-icon
-            item-end
-            class="password-eye-help-notes"
-            name="eye"
-            *ngIf="isShowingPassword"
-            (click)="setShowingPassword()"
-          ></ion-icon>
+          <ion-input [type]="isShowingPassword ? 'text' : 'password'" formControlName="password"></ion-input>
         </ion-item>
+        <button
+          clear
+          item-end
+          *ngIf="!isShowingPassword"
+          (click)="setShowingPassword()"
+          class="invisible-button-help-notes"
+        >
+          <ion-icon class="password-eye-help-notes" name="eye-off"> </ion-icon>
+        </button>
+        <button
+          clear
+          item-end
+          *ngIf="isShowingPassword"
+          (click)="setShowingPassword()"
+          class="invisible-button-help-notes"
+        >
+          <ion-icon class="password-eye-help-notes" name="eye"> </ion-icon>
+        </button>
         <button
           [disabled]="!loginForm.valid || !formIsPopulated()"
           ion-button
@@ -36,7 +40,8 @@
           {{ 'Enter' | translate }}
         </button>
       </form>
-      <button ion-button block margin-top class="btn-logar-help-notes">{{ 'Enter' | translate }}</button>
+      <button ion-button block margin-top class="btn-logar-help-notes">{{ 'SignUp' | translate }}</button>
     </ion-card-content>
   </ion-card>
+  <button ion-button block clear margin-top class="btn-logar-help-notes">{{ 'ForgotPassword' | translate }}</button>
 </ion-content>
